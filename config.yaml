@@ -1,6 +1,6 @@
 baseURL: "https://dennisosmani.github.io"
 languageCode: "en-us"
-title: "Min profil"
+title: "My profile"
 theme: hugo-profile
 
 outputs:

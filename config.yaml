@@ -2,6 +2,7 @@ baseURL: "https://dennisosmani.github.io"
 languageCode: "en-us"
 title: "Min profil"
 theme: hugo-profile
+remote_theme: gurusabarish/hugo-profile.git
 
 outputs:
   home:

@@ -213,7 +213,7 @@ params:
           name: "Western Norway University of Applied Sciences"
           url: "https://www.hvl.no/studier/studieprogram/dataingenior/"
         date: "2021 - 2024"
-       # GPA: "3.875 out of 5.0"
+        GPA: "3.875 out of 5.0"
         content: |-
           Bachelor
           - I have various subjects to become a complete computer engineer.

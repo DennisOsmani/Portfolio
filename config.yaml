@@ -1,0 +1,364 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: "Min profil"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  #main:
+   #- identifier: blog 
+   #   name: Blog
+   #   title: Blog posts
+   #   url: /blogs
+   #   weight: 1 
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Hugo Profile"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/logo1.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Min Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Dennis."
+    subtitle: "I´m a computer engineer student"
+    content: "A passionate student for coding and developing at Western Norway University of Applied Sciences. "
+    image: "/IconD3.jpeg"
+    bottomImage:
+      enable: true
+      roundImage: false # Make hero image circular | default false
+    button:
+      enable: false
+      name: "Resume"
+      url: ""
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/DennisOsmani
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/dennis-osmani-350b2b251/
+        - icon: fab fa-facebook
+          url: https://www.facebook.com/dennis.r.osmani/
+        - icon: fab fa-instagram
+          url: https://www.instagram.com/dennisosmani/
+      customIcons:
+    #    - icon: fab fa-insta
+    #     url: "https://example.com"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "Bilde2.PNG"
+    content: |-
+        I am a Data engineering student based in Bergen, Norway. In my courses and spare time i have been working on backend, frontend and fullstack projects.
+        I enjoy trying new technologies, and try to learn and get as much experience as possible. In my spare time i like to train and socialize with fellow students and friends, and
+        i also play football in the Norwegian 5. division. 
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with:"
+      items:
+        - "Java"
+        - "CSS"
+        - "JavaScript"
+        - "React"
+        - "HTML"
+        - "PostgreSQL"
+        - "Spring"
+        - "Hugo"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Warehouse employee"
+        company: "Asko Vest avd F&G"
+        date: "Sept 2022 - present"
+        content: |
+          This is formerly Bama. I work with packing goods for NorgesGruppen's various grocery stores. Here I have gained many different experiences such as:
+          - To work in a busy environment
+          - Contribute to efficient product replenishment and product delivery 
+          - Usage of technical equipment such as trucks and Asko's speech system
+          - Collaborate closely with colleagues to ensure an efficient working environment
+
+      - job: "Private math teacher"
+        company: "House of Math"
+        companyUrl: "https://www.houseofmath.com/"
+        date: "Feb 2022 - July 2022"
+        info:
+          enable: true
+          content: I worked as a private math teacher one semester.
+        content: |
+          Worked as a teaching assistant in math lessons for 8th graders and had private lessons for 10th graders after school at Kjøkkelvik Ungdomsskole.
+          This was a new pleasent experience for me, being be able to teach and help others understand math.
+
+      - job: "Warehouse employee"
+        company: "Bama avd Hamar"
+        date: "Mars 2020 - present"
+        info:
+          enable: false
+        content: |
+          Has now changed name to Asko, but i worked here at Hamar when it was called Bama. Doing the same as job as it says in the Asko experience.
+
+      - job: "On-call substitute"
+        company: "Skeidar"
+        date: "June 2019 - Juli 2020"
+        content: |
+          Worked as an on-call substitute during the summers. I worked in the warehouse delivering ordered furniture to customers. Assembled and placed new furniture for display in store.
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "Bachelor degree in Computer Engineer"
+        school:
+          name: "Western Norway University of Applied Sciences"
+          url: "https://www.hvl.no/studier/studieprogram/dataingenior/"
+        date: "2021 - 2024"
+       # GPA: "3.875 out of 5.0"
+        content: |-
+          Bachelor
+          - I have various subjects to become a complete computer engineer.
+          - I´m still a student.
+
+      - title: "Preliminary course for engineering"
+        school:
+          name: "Western Norway University of Applied Sciences"
+          url: "https://www.hvl.no/studier/studieprogram/realfagskurs-bergen/"
+        date: "2021 - 2021"
+      #  GPA: "3.8 out of 5.0"
+        content: |-
+          Science course
+          - I took physics 1 and math R1 + R2 in one semester.
+
+      - title: "High school"
+        school:
+          name: "Hamar Katedralskole"
+          url: "https://www.hamar-katedral.vgs.no/"
+        date: "2016 - 2019"
+      #  GPA: "3.8 out of 5.0"
+        content: |-
+          Study specialzation
+          - I had spanish as foreign language, practical math and socio-economic subjects.
+      
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Snakes and Ladders
+        content: A Snakes and Ladders game as a school project. Not finished as a Spring application, but the termnial version is playable.
+        image: SnakesAndLadders.jpeg
+       # featured:
+       #   name: Demo
+       #   link: https://hugo-profile.netlify.app
+        badges:
+          - "Java"
+          - "Spring"
+          - "CSS"
+          - "PostgreSQL"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/DennisOsmani/School-projects/tree/main/Snakes-and-ladders
+
+      #- title: Car Rental
+      #  content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
+      #  image: /images/projects/converter.jpg
+       # featured:
+       #   name: Demo
+       #   link: https://django-converter.herokuapp.com
+       # badges:
+       #   - "Java"
+       #   - "Spring"
+       #   - "CSS"
+       #   - "PostgreSQL"
+       # links:
+       #   - icon: fab fa-github
+       #     url: https://github.com/gurusabarish/converter
+
+      - title: Exchange Buddy
+        content: Exchange buddy is the largest school project i have worked on. It is a fullstack project with Java and Spring as backend and React as frontend. 
+        image: ExchangeBuddy.jpeg
+        featured:
+          name: Demo 
+          link: https://www.youtube.com/watch?v=DHf8ubIZEZo
+        badges:
+          - "Java"
+          - "Spring"
+          - "React"
+          - "PostgreSQL"
+          - "TailwindCSS"
+          - "Axios"
+          - "TypeScript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/gurusabarish/HugoProfileV2
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    email: dennisosmani@hotmail.com
+    btnName: Mail me
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    # socialNetworks:
+    #  github: https://github.com
+    #  linkedin: https://linkedin.com
+    #  twitter: https://twitter.com
+    #  instagram: https://instagram.com
+    #  facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
